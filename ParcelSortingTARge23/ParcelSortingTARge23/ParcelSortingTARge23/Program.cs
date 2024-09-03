@@ -1,6 +1,6 @@
 ﻿namespace ParcelSortingTARge23
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -44,7 +44,7 @@
                         Console.WriteLine("Sorting line width is {0} and it fits",
                             sortingLine.LineWidth);
                     }
-                    else if (boxSize.Width <= sortingLine.LineWidth || 
+                    else if (boxSize.Width >= sortingLine.LineWidth || 
                              boxSize.Length <= sortingLine.LineWidth)
                     {
                         Console.WriteLine("Sorting line width is {0} and it fits",
